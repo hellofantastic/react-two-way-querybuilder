@@ -59,7 +59,6 @@ class TwoWayQuerybuilder extends React.Component {
       nodeName: '1',
       rules: [],
     };
-    console.log("two way ",this.config.query, this.config);
     this.state = {
       data: this.config.query === '()' ? defaultData : QueryParser.parseToData(this.config.query, this.config),
       query: this.config.query === '()' ? null : this.config.query,

@@ -4,7 +4,6 @@ import ASTree from './ASTree';
 export default class QueryParser {
 
   static parseToQuery(data, query) {
-    console.log("Query PArse",data, query);
     query = '(';
     for (let i = 0, length = data.rules.length; i < length; i += 1) {
       if (!data.rules[i].combinator) {
